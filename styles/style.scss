@@ -1,0 +1,99 @@
+body {
+    // background-image: url('/assets/img/default.jpg');
+    background: black;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    #searchContainer {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        
+        input {
+            margin-right: 0.5rem;
+            width: 200px;
+            height: 40px;
+
+            &::placeholder{
+                text-align: center;
+                color: #a9a9a9;
+            }
+        }
+
+        button {
+            width: 80px;
+            font-weight: bold;
+            cursor: pointer;
+            background: white;
+            height: 41px;
+            
+        }
+
+        .searchControl{
+            box-shadow: 2px 2px 5px black;
+            border: none;
+            border-radius: 0.2rem;
+            
+        }
+
+    }
+
+    #weatherContainer {
+        margin-top: 3rem;
+        background-color: white;
+        box-shadow: 1px 1px 5px black;
+        padding: 5rem 10%;
+        border-radius: 0.4rem;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+        
+        h1 {
+            font-size: 42px;
+        }
+
+        #temperature{
+            font-size: 50px;
+        }
+
+        #weatherMain{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 20px;
+        }
+
+        #weatherDescription #documentIconImg {
+            width: 4rem;
+        }
+
+        .bottomDetails {
+            margin: 1rem;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+

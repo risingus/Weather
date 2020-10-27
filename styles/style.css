@@ -1,1 +1,136 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background: black;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body #searchContainer {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #searchContainer input {
+  margin-right: 0.5rem;
+  width: 200px;
+  height: 40px;
+}
+
+body #searchContainer input::-webkit-input-placeholder {
+  text-align: center;
+  color: #a9a9a9;
+}
+
+body #searchContainer input:-ms-input-placeholder {
+  text-align: center;
+  color: #a9a9a9;
+}
+
+body #searchContainer input::-ms-input-placeholder {
+  text-align: center;
+  color: #a9a9a9;
+}
+
+body #searchContainer input::placeholder {
+  text-align: center;
+  color: #a9a9a9;
+}
+
+body #searchContainer button {
+  width: 80px;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+  height: 41px;
+}
+
+body #searchContainer .searchControl {
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+body #weatherContainer {
+  margin-top: 3rem;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
+  padding: 5rem 10%;
+  border-radius: 0.4rem;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+body #weatherContainer h1 {
+  font-size: 42px;
+}
+
+body #weatherContainer #temperature {
+  font-size: 50px;
+}
+
+body #weatherContainer #weatherMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 20px;
+}
+
+body #weatherContainer #weatherDescription #documentIconImg {
+  width: 4rem;
+}
+
+body #weatherContainer .bottomDetails {
+  margin: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
