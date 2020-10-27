@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background-image: url("/assets/img/default.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center center;
@@ -25,6 +25,10 @@ body {
   margin: 0;
 }
 
+body h1 {
+  font-size: 5rem;
+}
+
 body #searchContainer {
   margin-top: 1rem;
   display: -webkit-box;
@@ -39,37 +43,46 @@ body #searchContainer {
 }
 
 body #searchContainer input {
-  margin-right: 0.5rem;
-  width: 200px;
-  height: 40px;
+  margin-right: 1rem;
+  width: 25rem;
+  background-color: #ddd;
+  border: none;
 }
 
 body #searchContainer input::-webkit-input-placeholder {
-  text-align: center;
+  padding-left: 0.1rem;
   color: #a9a9a9;
 }
 
 body #searchContainer input:-ms-input-placeholder {
-  text-align: center;
+  padding-left: 0.1rem;
   color: #a9a9a9;
 }
 
 body #searchContainer input::-ms-input-placeholder {
-  text-align: center;
+  padding-left: 0.1rem;
   color: #a9a9a9;
 }
 
 body #searchContainer input::placeholder {
-  text-align: center;
+  padding-left: 0.1rem;
   color: #a9a9a9;
 }
 
 body #searchContainer button {
-  width: 80px;
+  width: 10rem;
   font-weight: bold;
   cursor: pointer;
-  background: white;
-  height: 41px;
+  background: #00ff00;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body #searchContainer button:hover {
+  background: #00d200;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-left: 2rem;
 }
 
 body #searchContainer .searchControl {
@@ -77,14 +90,15 @@ body #searchContainer .searchControl {
           box-shadow: 2px 2px 5px black;
   border: none;
   border-radius: 0.2rem;
+  height: 3rem;
 }
 
 body #weatherContainer {
   margin-top: 3rem;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 1px 1px 5px black;
           box-shadow: 1px 1px 5px black;
-  padding: 5rem 10%;
+  padding: 5rem;
   border-radius: 0.4rem;
   visibility: hidden;
   display: -webkit-box;
@@ -97,8 +111,7 @@ body #weatherContainer {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-          clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  margin-bottom: 2rem;
 }
 
 body #weatherContainer h1 {

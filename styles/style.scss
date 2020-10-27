@@ -1,11 +1,17 @@
+$secondary-color: black;
+$primary-text-color: white;
+$input-color: #ddd;
+$placeholder-color: #a9a9a9;
+$button-color: #00ff00;
+$button-color-hover: #00d200;
+
 body {
-    // background-image: url('/assets/img/default.jpg');
-    background: black;
+    background-image: url('/assets/img/default.jpg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
-    color: white;
-    text-shadow: 2px 2px 1px black;
+    color: $primary-text-color;
+    text-shadow: 2px 2px 1px $secondary-color;
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
@@ -15,63 +21,75 @@ body {
     padding: 0;
     margin: 0;
 
+    h1 {
+        font-size: 5rem;
+    }
+
     #searchContainer {
         margin-top: 1rem;
         display: flex;
         align-items: center;
-        justify-content: center;   
-        
-        input {
-            margin-right: 0.5rem;
-            width: 200px;
-            height: 40px;
+        justify-content: center;
 
-            &::placeholder{
-                text-align: center;
-                color: #a9a9a9;
+        input {
+            margin-right: 1rem;
+            width: 25rem;
+            background-color: $input-color;
+            border: none;
+
+            &::placeholder {
+                padding-left: 0.1rem;
+                color: $placeholder-color;
             }
         }
 
         button {
-            width: 80px;
+            width: 10rem;
             font-weight: bold;
             cursor: pointer;
-            background: white;
-            height: 41px;
-            
+            background: $button-color;
+            transition: 0.4s;
+
+            &:hover{
+                background: $button-color-hover;
+                transform: scale(1.2);
+                margin-left: 2rem;
+            }
+
         }
 
-        .searchControl{
-            box-shadow: 2px 2px 5px black;
+        .searchControl {
+            box-shadow: 2px 2px 5px $secondary-color;
             border: none;
             border-radius: 0.2rem;
-            
+            height: 3rem;
+
         }
 
     }
 
     #weatherContainer {
         margin-top: 3rem;
-        background-color: white;
-        box-shadow: 1px 1px 5px black;
-        padding: 5rem 10%;
+        background-color: rgba($color: $secondary-color, $alpha: 0.25);
+        box-shadow: 1px 1px 5px $secondary-color;
+        padding: 5rem;
         border-radius: 0.4rem;
         visibility: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-        
+        margin-bottom: 2rem;
+
         h1 {
             font-size: 42px;
         }
 
-        #temperature{
+        #temperature {
             font-size: 50px;
         }
 
-        #weatherMain{
+        #weatherMain {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -89,11 +107,3 @@ body {
     }
 
 }
-
-
-
-
-
-
-
-
