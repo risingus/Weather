@@ -23,8 +23,7 @@ body {
     margin: 0;
 
     #title {
-        font-size: 4rem;
-        font-size: 5rem;
+        font-size: 3rem;
         text-align: center;
         margin: 4rem 1rem;
     }
@@ -34,11 +33,13 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         input {
             margin-right: 1rem;
-            width: 25rem;
+            width: 20rem;
             background-color: $card-color;
-            border: none;
+            // border: none;
+            border: hidden;
 
             &::placeholder {
                 padding-left: 0.1rem;
@@ -47,7 +48,7 @@ body {
         }
 
         button {
-            width: 10rem;
+            width: 8rem;
             font-weight: bold;
             font-style: italic;
             font-size: 1.1rem;
@@ -58,7 +59,7 @@ body {
             &:hover {
                 background: $button-color-hover;
                 transform: scale(1.2);
-                margin-left: 2rem;
+                // margin-left: 2rem;
             }
         }
 
@@ -82,7 +83,7 @@ body {
         margin-bottom: 1rem;
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.2rem;
         }
 
         #weatherDescription #subTemperatures {
@@ -102,7 +103,7 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
-            font-size: 20px;
+            font-size: 1rem;
         }
 
         #weatherDescription #documentIconImg {
@@ -116,16 +117,37 @@ body {
 
     footer {
         bottom: 0;
-        margin-bottom: 1rem;
     }
 }
 
 @media only screen and (min-width: 750px) {
-    body #searchContainer {
-        flex-direction: row;
+
+    body {
+
+        #title {
+            font-size: 5rem;
+        }
+
+        #searchContainer {
+            flex-direction: row;
+
+            button:hover {
+                margin-left: 2rem;
+            }
+        }
+
+        #weatherContainer {
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        footer {
+            position: absolute;
+            margin-bottom: 1rem;
+        }
     }
 
-    footer {
-        position: absolute;
-    }
+
 }

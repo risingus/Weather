@@ -26,8 +26,7 @@ body {
 }
 
 body #title {
-  font-size: 4rem;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   margin: 4rem 1rem;
 }
@@ -50,9 +49,9 @@ body #searchContainer {
 
 body #searchContainer input {
   margin-right: 1rem;
-  width: 25rem;
+  width: 20rem;
   background-color: rgba(255, 255, 255, 0.5);
-  border: none;
+  border: hidden;
 }
 
 body #searchContainer input::-webkit-input-placeholder {
@@ -76,7 +75,7 @@ body #searchContainer input::placeholder {
 }
 
 body #searchContainer button {
-  width: 10rem;
+  width: 8rem;
   font-weight: bold;
   font-style: italic;
   font-size: 1.1rem;
@@ -90,7 +89,6 @@ body #searchContainer button:hover {
   background: #00d200;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  margin-left: 2rem;
 }
 
 body #searchContainer .searchControl {
@@ -115,7 +113,7 @@ body #weatherContainer {
 }
 
 body #weatherContainer h1 {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
 }
 
 body #weatherContainer #weatherDescription #subTemperatures {
@@ -153,7 +151,7 @@ body #weatherContainer #weatherMain {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 body #weatherContainer #weatherDescription #documentIconImg {
@@ -166,18 +164,27 @@ body #weatherContainer .bottomDetails {
 
 body footer {
   bottom: 0;
-  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 750px) {
+  body #title {
+    font-size: 5rem;
+  }
   body #searchContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  footer {
+  body #searchContainer button:hover {
+    margin-left: 2rem;
+  }
+  body #weatherContainer h1 {
+    font-size: 2rem;
+  }
+  body footer {
     position: absolute;
+    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
