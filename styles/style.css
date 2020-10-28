@@ -45,7 +45,7 @@ body #searchContainer {
 body #searchContainer input {
   margin-right: 1rem;
   width: 25rem;
-  background-color: #ddd;
+  background-color: rgba(255, 255, 255, 0.5);
   border: none;
 }
 
@@ -72,6 +72,8 @@ body #searchContainer input::placeholder {
 body #searchContainer button {
   width: 10rem;
   font-weight: bold;
+  font-style: italic;
+  font-size: 1.1rem;
   cursor: pointer;
   background: #00ff00;
   -webkit-transition: 0.4s;
@@ -95,7 +97,7 @@ body #searchContainer .searchControl {
 
 body #weatherContainer {
   margin-top: 2rem;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 1px 1px 5px black;
           box-shadow: 1px 1px 5px black;
   padding: 4rem;
@@ -116,6 +118,23 @@ body #weatherContainer {
 
 body #weatherContainer h1 {
   font-size: 2.5rem;
+}
+
+body #weatherContainer #weatherDescription #subTemperatures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 1rem;
 }
 
 body #weatherContainer #temperature {

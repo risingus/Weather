@@ -34,7 +34,7 @@ body {
         input {
             margin-right: 1rem;
             width: 25rem;
-            background-color: $input-color;
+            background-color: rgba(255, 255, 255, 0.5);
             border: none;
 
             &::placeholder {
@@ -46,6 +46,8 @@ body {
         button {
             width: 10rem;
             font-weight: bold;
+            font-style: italic;
+            font-size: 1.1rem;
             cursor: pointer;
             background: $button-color;
             transition: 0.4s;
@@ -70,7 +72,7 @@ body {
 
     #weatherContainer {
         margin-top: 2rem;
-        background-color: rgba($color: $secondary-color, $alpha: 0.25);
+        background-color: rgba($color: $secondary-color, $alpha: 0.70);
         box-shadow: 1px 1px 5px $secondary-color;
         padding: 4rem;
         border-radius: 0.4rem;
@@ -85,9 +87,20 @@ body {
             font-size: 2.5rem;
         }
 
-        #temperature {
-            font-size: 3rem;
+        #weatherDescription #subTemperatures{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            margin-top: 1rem;
         }
+
+        #temperature {
+                font-size: 3rem;
+            }
+
+
+       
 
         #weatherMain {
             display: flex;

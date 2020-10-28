@@ -11,21 +11,26 @@
     
     <h1>Just an Weather App</h1>
     <div id="searchContainer">
-        <input class="searchControl"  type="text" placeholder="Nome da cidade" id="searchInput">
-        <button class="searchControl" type="button" id="searchBtn">Pesquisar</button>
+        <input class="searchControl"  type="text" placeholder="Enter city name or city, 2-digits country code" id="searchInput">
+        <button class="searchControl" type="button" id="searchBtn">Search</button>
     </div>
 
     <div id="weatherContainer">
         <div id="weatherDescription">  
             <h1 id="cityHeader"></h1>
-            <div id="temperature"></div>
+                <div id="temperature"></div>
+                <div id="subTemperatures">
+                    <div id="temp_min"></div>
+                    <div id="temp_max"></div>
+                </div>
+                
             <div id="weatherMain">
                 <div id="weatherDescriptionHeader"></div>
                 <div><img src="" id="documentIconImg"></div>
             </div>
             <hr>
             <div id="windSpeed" class="bottomDetails"></div>
-            <div id="humidity" class="bottomDetails"></div>
+            <div id="feels_like" class="bottomDetails"></div>
         </div>
     </div>
 
