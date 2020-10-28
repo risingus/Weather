@@ -25,15 +25,21 @@ body {
   margin: 0;
 }
 
-body h1 {
+body #title {
   font-size: 4rem;
+  font-size: 5rem;
+  text-align: center;
+  margin: 4rem 1rem;
 }
 
 body #searchContainer {
-  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,25 +99,17 @@ body #searchContainer .searchControl {
   border: none;
   border-radius: 0.2rem;
   height: 3rem;
+  margin-bottom: 2rem;
 }
 
 body #weatherContainer {
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 1px 1px 5px black;
           box-shadow: 1px 1px 5px black;
-  padding: 4rem;
+  padding: 1rem 4rem;
   border-radius: 0.4rem;
   visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -164,5 +162,22 @@ body #weatherContainer #weatherDescription #documentIconImg {
 
 body #weatherContainer .bottomDetails {
   margin: 1rem;
+}
+
+body footer {
+  bottom: 0;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 750px) {
+  body #searchContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer {
+    position: absolute;
+  }
 }
 /*# sourceMappingURL=style.css.map */

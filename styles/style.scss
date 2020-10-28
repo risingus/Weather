@@ -4,6 +4,7 @@ $input-color: #ddd;
 $placeholder-color: #a9a9a9;
 $button-color: #00ff00;
 $button-color-hover: #00d200;
+$card-color: rgba(255, 255, 255, 0.5);
 
 body {
     background-image: url("../assets/img/default.jpg");
@@ -21,20 +22,24 @@ body {
     padding: 0;
     margin: 0;
 
-    h1 {
+
+    #title {
         font-size: 4rem;
+        font-size: 5rem;
+        text-align: center;
+        margin: 4rem 1rem;
+        
     }
 
     #searchContainer {
-        margin-top: 1rem;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-
         input {
             margin-right: 1rem;
             width: 25rem;
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: $card-color;
             border: none;
 
             &::placeholder {
@@ -57,29 +62,26 @@ body {
                 transform: scale(1.2);
                 margin-left: 2rem;
             }
-
         }
+
 
         .searchControl {
             box-shadow: 2px 2px 5px $secondary-color;
             border: none;
             border-radius: 0.2rem;
             height: 3rem;
-
+            margin-bottom: 2rem;
         }
 
     }
 
     #weatherContainer {
-        margin-top: 2rem;
+        margin-top: 1rem;
         background-color: rgba($color: $secondary-color, $alpha: 0.70);
         box-shadow: 1px 1px 5px $secondary-color;
-        padding: 4rem;
+        padding: 1rem 4rem;
         border-radius: 0.4rem;
         visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         text-align: center;
         margin-bottom: 1rem;
 
@@ -99,9 +101,6 @@ body {
                 font-size: 3rem;
             }
 
-
-       
-
         #weatherMain {
             display: flex;
             flex-direction: row;
@@ -119,4 +118,21 @@ body {
         }
     }
 
+    
+
+    footer{
+        bottom: 0;
+        margin-bottom: 1rem;
+    }
+
 }
+
+@media only screen and (min-width: 750px) {
+    body #searchContainer {
+        flex-direction: row;
+    }
+
+    footer {
+        position: absolute;
+    }
+  }
