@@ -1,6 +1,6 @@
  <img src="https://github.com/risingus/Weather/blob/master/assets/img/readme.PNG" alt="project preview">
  <h1>💻 Project </h1>
- <p>A simple website to see the weather searching by city name, using Open Wather Map API</p>
+ <p>A simple website to see the weather, using Open Wather Map API</p>
  
 <h1>Used technologies</h1>
 <li><a href="https://www.w3schools.com/html/">HTML</a></li>
