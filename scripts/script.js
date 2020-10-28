@@ -38,6 +38,7 @@ function init(resultFromServer) {
 function showWeatherInfo() {
     let weatherContainer = document.getElementById('weatherContainer');
     weatherContainer.style.visibility = 'visible';
+    document.getElementById('searchInput').value = '';
 
 }
 
