@@ -1,5 +1,6 @@
- <img src="https://github.com/risingus/Weather/blob/master/assets/img/readme.PNG" alt="project preview" width="40%">
- <img src="https://github.com/risingus/Weather/blob/master/assets/img/readme2.PNG" alt="project preview" width="40%">
+ <img src="https://github.com/risingus/Weather/blob/master/assets/img/readme.PNG" width="40%">
+ <img src="https://github.com/risingus/Weather/blob/master/assets/img/readme2.PNG" width="40%">
+ <img src="https://github.com/risingus/Weather/blob/master/assets/img/readme3.PNG" width="40%">
  <h1>💻 Project </h1>
  <p>A simple website to see the weather, using Open Wather Map API</p>
  
