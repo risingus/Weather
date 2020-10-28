@@ -13,7 +13,7 @@ body {
     background-position: center center;
     color: $primary-text-color;
     text-shadow: 2px 2px 1px $secondary-color;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -22,13 +22,11 @@ body {
     padding: 0;
     margin: 0;
 
-
     #title {
         font-size: 4rem;
         font-size: 5rem;
         text-align: center;
         margin: 4rem 1rem;
-        
     }
 
     #searchContainer {
@@ -57,13 +55,12 @@ body {
             background: $button-color;
             transition: 0.4s;
 
-            &:hover{
+            &:hover {
                 background: $button-color-hover;
                 transform: scale(1.2);
                 margin-left: 2rem;
             }
         }
-
 
         .searchControl {
             box-shadow: 2px 2px 5px $secondary-color;
@@ -72,12 +69,11 @@ body {
             height: 3rem;
             margin-bottom: 2rem;
         }
-
     }
 
     #weatherContainer {
         margin-top: 1rem;
-        background-color: rgba($color: $secondary-color, $alpha: 0.70);
+        background-color: rgba($color: $secondary-color, $alpha: 0.7);
         box-shadow: 1px 1px 5px $secondary-color;
         padding: 1rem 4rem;
         border-radius: 0.4rem;
@@ -89,7 +85,7 @@ body {
             font-size: 2.5rem;
         }
 
-        #weatherDescription #subTemperatures{
+        #weatherDescription #subTemperatures {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -98,8 +94,8 @@ body {
         }
 
         #temperature {
-                font-size: 3rem;
-            }
+            font-size: 3rem;
+        }
 
         #weatherMain {
             display: flex;
@@ -118,13 +114,10 @@ body {
         }
     }
 
-    
-
-    footer{
+    footer {
         bottom: 0;
         margin-bottom: 1rem;
     }
-
 }
 
 @media only screen and (min-width: 750px) {
@@ -135,4 +128,4 @@ body {
     footer {
         position: absolute;
     }
-  }
+}
