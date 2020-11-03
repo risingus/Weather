@@ -38,7 +38,6 @@ body {
             margin-right: 1rem;
             width: 20rem;
             background-color: $card-color;
-            // border: none;
             border: hidden;
 
             &::placeholder {
@@ -55,6 +54,7 @@ body {
             cursor: pointer;
             background: $button-color;
             transition: 0.4s;
+            color: $primary-text-color;
 
             &:hover {
                 background: $button-color-hover;

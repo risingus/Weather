@@ -83,6 +83,7 @@ body #searchContainer button {
   background: #00ff00;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: white;
 }
 
 body #searchContainer button:hover {
