@@ -5,9 +5,11 @@ $placeholder-color: #a9a9a9;
 $button-color: #00ff00;
 $button-color-hover: #00d200;
 $card-color: rgba(255, 255, 255, 0.5);
+$background-color: #49c5e1;
 
 body {
     background-image: url("../assets/img/default.jpg");
+    background-color: $background-color;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center center;
@@ -59,7 +61,7 @@ body {
             &:hover {
                 background: $button-color-hover;
                 transform: scale(1.2);
-                // margin-left: 2rem;
+                
             }
         }
 
