@@ -189,4 +189,16 @@ body footer {
     margin-bottom: 1rem;
   }
 }
+
+@media only screen and (min-height: 758px) {
+  body {
+    background-position: top center;
+  }
+}
+
+@media only screen and (min-height: 1365px) {
+  body {
+    background-size: 280%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
