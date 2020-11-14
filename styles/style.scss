@@ -8,165 +8,154 @@ $card-color: rgba(255, 255, 255, 0.5);
 $background-color: #49c5e1;
 
 body {
-    background-image: url("../assets/img/default.jpg");
-    background-color: $background-color;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: $primary-text-color;
-    text-shadow: 2px 2px 1px $secondary-color;
-    font-family: "Roboto", sans-serif;
+  background-image: url("../assets/img/default.jpg");
+  background-color: $background-color;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: $primary-text-color;
+  text-shadow: 2px 2px 1px $secondary-color;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  #title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem 1rem;
+  }
+
+  #searchContainer {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
 
-    #title {
-        font-size: 3rem;
-        text-align: center;
-        margin: 4rem 1rem;
+    input {
+      margin-right: 1rem;
+      width: 20rem;
+      background-color: $card-color;
+      border: hidden;
+
+      &::placeholder {
+        padding-left: 0.1rem;
+        color: $placeholder-color;
+      }
     }
 
-    #searchContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    button {
+      width: 8rem;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 1.1rem;
+      cursor: pointer;
+      background: $button-color;
+      transition: 0.4s;
+      color: $primary-text-color;
 
-        input {
-            margin-right: 1rem;
-            width: 20rem;
-            background-color: $card-color;
-            border: hidden;
-
-            &::placeholder {
-                padding-left: 0.1rem;
-                color: $placeholder-color;
-            }
-        }
-
-        button {
-            width: 8rem;
-            font-weight: bold;
-            font-style: italic;
-            font-size: 1.1rem;
-            cursor: pointer;
-            background: $button-color;
-            transition: 0.4s;
-            color: $primary-text-color;
-
-            &:hover {
-                background: $button-color-hover;
-                transform: scale(1.2);
-                
-            }
-        }
-
-        .searchControl {
-            box-shadow: 2px 2px 5px $secondary-color;
-            border: none;
-            border-radius: 0.2rem;
-            height: 3rem;
-            margin-bottom: 2rem;
-        }
+      &:hover {
+        background: $button-color-hover;
+        transform: scale(1.2);
+      }
     }
 
-    #weatherContainer {
-        margin-top: 1rem;
-        background-color: rgba($color: $secondary-color, $alpha: 0.7);
-        box-shadow: 1px 1px 5px $secondary-color;
-        padding: 1rem 4rem;
-        border-radius: 0.4rem;
-        visibility: hidden;
-        text-align: center;
-        margin-bottom: 1rem;
+    .searchControl {
+      box-shadow: 2px 2px 5px $secondary-color;
+      border: none;
+      border-radius: 0.2rem;
+      height: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
 
-        h1 {
-            font-size: 1.2rem;
-        }
+  #weatherContainer {
+    margin-top: 1rem;
+    background-color: rgba($color: $secondary-color, $alpha: 0.7);
+    box-shadow: 1px 1px 5px $secondary-color;
+    padding: 1rem 4rem;
+    border-radius: 0.4rem;
+    visibility: hidden;
+    text-align: center;
+    margin-bottom: 1rem;
 
-        #weatherDescription #subTemperatures {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-evenly;
-            margin-top: 1rem;
-        }
-
-        #temperature {
-            font-size: 3rem;
-        }
-
-        #weatherMain {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            font-size: 1rem;
-        }
-
-        #weatherDescription #documentIconImg {
-            width: 4rem;
-        }
-
-        .bottomDetails {
-            margin: 1rem;
-        }
+    h1 {
+      font-size: 1.2rem;
     }
 
-    footer {
-        bottom: 0;
+    #weatherDescription #subTemperatures {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      margin-top: 1rem;
     }
+
+    #temperature {
+      font-size: 3rem;
+    }
+
+    #weatherMain {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 1rem;
+    }
+
+    #weatherDescription #documentIconImg {
+      width: 4rem;
+    }
+
+    .bottomDetails {
+      margin: 1rem;
+    }
+  }
+
+  footer {
+    bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 750px) {
-
-    body {
-
-        #title {
-            font-size: 5rem;
-        }
-
-        #searchContainer {
-            flex-direction: row;
-
-            button:hover {
-                margin-left: 2rem;
-            }
-        }
-
-        #weatherContainer {
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-
-        footer {
-            position: absolute;
-            margin-bottom: 1rem;
-        }
+  body {
+    #title {
+      font-size: 5rem;
     }
 
+    #searchContainer {
+      flex-direction: row;
 
+      button:hover {
+        margin-left: 2rem;
+      }
+    }
+
+    #weatherContainer {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    footer {
+      position: absolute;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
-
 @media only screen and (min-height: 758px) {
-
-    body{
-        background-position: top center;
-    }
+  body {
+    background-position: top center;
+  }
 }
 
 @media only screen and (min-height: 1365px) {
-
-    body{
-
-        background-size: 280%;
-    }
+  body {
+    background-size: 280%;
+  }
 }
-
