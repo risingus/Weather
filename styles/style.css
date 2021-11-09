@@ -23,7 +23,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0 1rem;
 }
 
 body #title {
@@ -192,7 +192,8 @@ body footer {
 
 @media only screen and (min-height: 758px) {
   body {
-    background-position: top center;
+    background-position: center center;
+    height: 100vh;
   }
 }
 

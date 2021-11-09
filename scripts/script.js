@@ -10,11 +10,11 @@ function searchWeather(searchTerm) {
       return result.json();
     })
     .then((result) => {
-      init(result);
+      setWeatherData(result);
     });
 }
 
-function init(resultFromServer) {
+function setWeatherData(resultFromServer) {
   let weatherDescriptionHeader = document.getElementById(
     "weatherDescriptionHeader"
   );
@@ -48,8 +48,6 @@ function init(resultFromServer) {
   feels_likeElement.innerHTML =
     "Thermal Sensation: " + resultFromServer.main.feels_like + "&#176  C";
 
-  console.log(resultFromServer);
-
   showWeatherInfo();
 }
 
@@ -64,3 +62,13 @@ document.getElementById("searchBtn").addEventListener("click", () => {
 
   if (searchTerm) searchWeather(searchTerm);
 });
+
+document.getElementById('searchContainer').addEventListener('submit', (event) => {
+  event.preventDefault();
+  let searchTerm = document.getElementById("searchInput").value;
+
+  if (searchTerm) searchWeather(searchTerm)
+})
+
+
+document.getElementById('audio').play();

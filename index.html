@@ -13,11 +13,11 @@
 
 
     <h1 id="title">Just a Weather App</h1>
-    <div id="searchContainer">
+    <form id="searchContainer">
         <input class="searchControl" type="text" placeholder="Enter city name or city, 2-digits country code"
             id="searchInput">
         <button class="searchControl" type="button" id="searchBtn">Search</button>
-    </div>
+    </form>
 
     <div id="weatherContainer">
         <div id="weatherDescription">
@@ -40,6 +40,10 @@
 
 
     <footer>Coded with 💗 by Gustavo Lima</footer>
+
+    <audio id="audio" loop autoplay>
+        <source src="/assets/sound/beachSound.mp3" type="audio/mp3">
+    </audio>
 
     <script src="./scripts/script.js"></script>
 </body>
